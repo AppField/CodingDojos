@@ -48,6 +48,18 @@ namespace CodingDojo1 {
             Console.WriteLine("\nRead all Values");
             dojoList.ReadValues();
 
+            Console.WriteLine("\nPop");
+            dojoList.Pop();
+            Console.WriteLine("\nPop");
+            dojoList.Pop();
+            Console.WriteLine("\nPop");
+            dojoList.Pop();
+            Console.WriteLine("\nPop");
+            dojoList.Pop();
+
+            Console.WriteLine("\nPeek");
+            dojoList.Peek();
+
             Console.ReadKey();
         }
     }

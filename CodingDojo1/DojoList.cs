@@ -18,16 +18,14 @@ namespace CodingDojo1 {
             if (_start == null) {
                 _start = new DojoElement<T>(value);
 
-            }
-            else {
+            } else {
                 DojoElement<T> node = _start;
                 while (node.next != null) {
                     node = node.next;
                 }
                 if (node.value == null) {
                     node.value = value;
-                }
-                else {
+                } else {
                     node.next = new DojoElement<T>(value);
                 }
             }
@@ -38,6 +36,7 @@ namespace CodingDojo1 {
 
             if (node == null) {
                 Console.WriteLine("No Elements in list");
+                return;
             }
 
             while (node.next != null) {
@@ -52,7 +51,15 @@ namespace CodingDojo1 {
             DojoElement<T> node = _start;
 
             if (node == null) {
-                Console.WriteLine("No Elements in list");
+                Console.WriteLine("No Element in list");
+                return;
+            }
+
+            if (node.next == null) {
+                T lastValue = _start.value;
+                _start = null;
+                Console.WriteLine("Last Value removed: {0}", lastValue);
+                return;
             }
 
             bool nextIsLast = false;
