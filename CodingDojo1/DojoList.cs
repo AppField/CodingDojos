@@ -20,13 +20,13 @@ namespace CodingDojo1 {
 
             } else {
                 DojoElement<T> node = _start;
-                while (node.next != null) {
-                    node = node.next;
+                while (node.Next != null) {
+                    node = node.Next;
                 }
-                if (node.value == null) {
-                    node.value = value;
+                if (node.Value == null) {
+                    node.Value = value;
                 } else {
-                    node.next = new DojoElement<T>(value);
+                    node.Next = new DojoElement<T>(value);
                 }
             }
         }
@@ -39,11 +39,11 @@ namespace CodingDojo1 {
                 return;
             }
 
-            while (node.next != null) {
-                node = node.next;
+            while (node.Next != null) {
+                node = node.Next;
             }
-            if (node.value != null) {
-                Console.WriteLine(node.value);
+            if (node.Value != null) {
+                Console.WriteLine(node.Value);
             }
         }
 
@@ -55,8 +55,8 @@ namespace CodingDojo1 {
                 return;
             }
 
-            if (node.next == null) {
-                T lastValue = _start.value;
+            if (node.Next == null) {
+                T lastValue = _start.Value;
                 _start = null;
                 Console.WriteLine("Last Value removed: {0}", lastValue);
                 return;
@@ -64,14 +64,14 @@ namespace CodingDojo1 {
 
             bool nextIsLast = false;
             while (!nextIsLast) {
-                if (node.next != null && node.next.next == null) {
+                if (node.Next != null && node.Next.Next == null) {
                     nextIsLast = true;
                 } else {
-                    node = node.next;
+                    node = node.Next;
                 }
             }
-            T valueRemoved = node.next.value;
-            node.next = null;
+            T valueRemoved = node.Next.Value;
+            node.Next = null;
             Console.WriteLine("Value removed: {0}", valueRemoved);
         }
 
@@ -82,13 +82,13 @@ namespace CodingDojo1 {
                 Console.WriteLine("No Elements in list");
             }
 
-            while (node.next != null) {
-                Console.WriteLine(node.value);
+            while (node.Next != null) {
+                Console.WriteLine(node.Value);
 
-                node = node.next;
+                node = node.Next;
             }
-            if (node.value != null) {
-                Console.WriteLine(node.value);
+            if (node.Value != null) {
+                Console.WriteLine(node.Value);
             }
         }
     }

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace CodingDojo1 {
     class DojoElement<T> {
-        public T value;
-        public DojoElement<T> next;
+        public T Value { get; set; }
+        public DojoElement<T> Next { get; set; }
 
         public DojoElement(T value) {
-            this.value = value;
+            this.Value = value;
         }
     }
 }
