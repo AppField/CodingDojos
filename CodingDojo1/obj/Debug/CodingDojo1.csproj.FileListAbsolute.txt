@@ -1,0 +1,7 @@
+C:\Users\Midows\source\repos\CodingDojo1\CodingDojo1\bin\Debug\CodingDojo1.exe.config
+C:\Users\Midows\source\repos\CodingDojo1\CodingDojo1\bin\Debug\CodingDojo1.exe
+C:\Users\Midows\source\repos\CodingDojo1\CodingDojo1\bin\Debug\CodingDojo1.pdb
+C:\Users\Midows\source\repos\CodingDojo1\CodingDojo1\obj\Debug\CodingDojo1.csprojAssemblyReference.cache
+C:\Users\Midows\source\repos\CodingDojo1\CodingDojo1\obj\Debug\CodingDojo1.csproj.CoreCompileInputs.cache
+C:\Users\Midows\source\repos\CodingDojo1\CodingDojo1\obj\Debug\CodingDojo1.exe
+C:\Users\Midows\source\repos\CodingDojo1\CodingDojo1\obj\Debug\CodingDojo1.pdb
