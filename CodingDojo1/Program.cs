@@ -10,7 +10,7 @@ namespace CodingDojo1 {
 
             Console.WriteLine("Starting Dojo 1\n");
 
-            DojoList<int> dojoList = new DojoList<int>(10);
+            DojoStack<int> dojoList = new DojoStack<int>(10);
             dojoList.Push(20);
             dojoList.Push(30);
             dojoList.Push(25);

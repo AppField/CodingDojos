@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CodingDojo1 {
-    class DojoList<T> {
+    class DojoStack<T> {
         private DojoElement<T> _start;
 
-        public DojoList() { }
+        public DojoStack() { }
 
-        public DojoList(T value) {
+        public DojoStack(T value) {
             _start = new DojoElement<T>(value);
         }
 
