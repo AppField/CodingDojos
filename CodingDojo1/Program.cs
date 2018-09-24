@@ -10,47 +10,77 @@ namespace CodingDojo1 {
 
             Console.WriteLine("Starting Dojo 1\n");
 
-            Console.WriteLine("Start Stack with 10, 20, 35");
+            Console.WriteLine("Start Stack with 20, 35");
 
-            DojoStack<int> dojoList = new DojoStack<int>(10);
-            dojoList.Push(20);
-            dojoList.Push(35);
+            DojoStack<int> dojoStack = new DojoStack<int>(20);
+            dojoStack.Push(35);
 
-            Console.WriteLine("\nPeek");
-            dojoList.Peek();
+            int peeked = dojoStack.Peek();
+            Console.WriteLine("\nPeeked: {0}", peeked);
 
             Console.WriteLine("\nPush 66");
-            dojoList.Push(66);
+            dojoStack.Push(66);
 
-            Console.WriteLine("\nPeek");
-            dojoList.Peek();
+            peeked = dojoStack.Peek();
+            Console.WriteLine("\nPeeked: {0}", peeked);
 
-            Console.WriteLine("\nPop");
-            dojoList.Pop();
+            int popped = dojoStack.Pop();
+            Console.WriteLine("\nPop: {0}", popped);
 
-            Console.WriteLine("\nPeek");
-            dojoList.Peek();
+            peeked = dojoStack.Peek();
+            Console.WriteLine("\nPeeked: {0}", peeked);
 
-            Console.WriteLine("\nPop");
-            dojoList.Pop();
+            popped = dojoStack.Pop();
+            Console.WriteLine("\nPop: {0}", popped);
 
             Console.WriteLine("\nPush 80");
-            dojoList.Push(80);
+            dojoStack.Push(80);
 
-            Console.WriteLine("\nPop");
-            dojoList.Pop();
+            popped = dojoStack.Pop();
+            Console.WriteLine("\nPop: {0}", popped);
 
-            Console.WriteLine("\nPop");
-            dojoList.Pop();
+            popped = dojoStack.Pop();
+            Console.WriteLine("\nPop: {0}\n", popped);
 
-            Console.WriteLine("\nPop");
-            dojoList.Pop();
+            popped = dojoStack.Pop();
+            Console.WriteLine("Pop: {0}\n", popped);
 
-            Console.WriteLine("\nPop");
-            dojoList.Pop();
+            popped = dojoStack.Pop();
+            Console.WriteLine("Pop: {0}\n", popped);
 
-            Console.WriteLine("\nPeek");
-            dojoList.Peek();
+            peeked = dojoStack.Peek();
+            Console.WriteLine("Peeked: {0}\n", peeked);
+
+            Console.WriteLine("Press key for string demo");
+            Console.ReadKey();
+            
+            Console.WriteLine("\n\n ========= Stack with Strings ========= ");
+
+            Console.WriteLine("\nStart Stack with 'First', 'Second'");
+
+            DojoStack<string> dojoStackStrings = new DojoStack<string>("First");
+            dojoStackStrings.Push("Second");
+
+            string peekedString = dojoStackStrings.Peek();
+            Console.WriteLine("\nPeeked: {0}", peekedString);
+
+            string poppedString = dojoStackStrings.Pop();
+            Console.WriteLine("Pop: {0}\n", poppedString);
+
+            Console.WriteLine("Push 'Third'");
+            dojoStackStrings.Push("Third");
+
+            peekedString = dojoStackStrings.Peek();
+            Console.WriteLine("\nPeeked: {0}\n", peekedString);
+
+            poppedString = dojoStackStrings.Pop();
+            Console.WriteLine("Pop: {0}\n", poppedString);
+
+            poppedString = dojoStackStrings.Pop();
+            Console.WriteLine("Pop: {0}\n", poppedString);
+
+            poppedString = dojoStackStrings.Pop();
+            Console.WriteLine("Pop: {0}\n", poppedString);
 
             Console.ReadKey();
         }

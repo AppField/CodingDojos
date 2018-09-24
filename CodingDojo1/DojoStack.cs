@@ -25,27 +25,28 @@ namespace CodingDojo1 {
             }
         }
 
-        public void Peek() {
+        public T Peek() {
             if (current == null) {
                 Console.WriteLine("No Elements in stack");
-                return;
+                return default(T);
             }
-            Console.WriteLine(current.Value);
+            return current.Value;
+            //Console.WriteLine(current.Value);
         }
 
-        public void Pop() {
+        public T Pop() {
             if (current == null) {
                 Console.WriteLine("No Element in stack");
-                return;
+                return default(T);
             }
             T poppedValue = current.Value;
-            Console.WriteLine("Popped Value removed: {0}", poppedValue);
 
             if (current.Previous == null) {
                 current = null;
             } else {
                 current = current.Previous;
             }
+            return poppedValue;
         }
     }
 }
