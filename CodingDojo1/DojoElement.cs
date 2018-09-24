@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CodingDojo1 {
     class DojoElement<T> {
         public T Value { get; set; }
-        public DojoElement<T> Next { get; set; }
+        public DojoElement<T> Previous { get; set; }
 
         public DojoElement(T value) {
             this.Value = value;
